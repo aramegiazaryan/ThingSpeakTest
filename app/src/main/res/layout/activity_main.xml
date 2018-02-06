@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aram.thingspeaktest.MainActivity">
+
+
+    <EditText
+        android:id="@+id/tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Temperature"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/tv_pressure"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Enter Pressure"-->
+        <!--android:layout_alignParentRight="true"-->
+       <!--android:layout_marginRight="10dp"-->
+        <!--tools:layout_editor_absoluteY="0dp" />-->
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_temp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Send" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="311dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_send"
+        android:layout_marginTop="42dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_send"
+        android:layout_marginBottom="25dp"
+        android:text="GET"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+</RelativeLayout>
